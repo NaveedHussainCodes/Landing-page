@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+nav{
+    height: 90px;
+    width: 100%;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1vw 2vw;
+    border-bottom: 2px solid  rgba(2, 20, 20, 0.342);
+
+}
+.nav-2{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+nav h2{
+    font-size: 2.5vw;
+}
+.nav-2 h4{
+    font-size: 1.5vw;
+}
+nav button{
+    padding: 1.5vh 1.6vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+nav i{
+    font-size: 2vw;
+    font-weight: 800;
+    display: none;
+}
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right{
+    height: 100%;
+    width: 45%;
+
+}
+.right img{
+    height: 100%;
+    width: 100%;
+}
+.left{
+    height: 100%;
+    width: 55%;
+    padding: 3vw 4vw;
+}
+.left h1{
+    font-size: 4vw;
+}
+.left span{
+    color: lightseagreen;
+}
+.left p{
+    font-size: 1.6vw;
+    margin-top: 2vw;
+}
+.left button{
+    padding: 2vh 2vw;
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin-top: 4vh;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px){
+    nav{
+        
+        padding: 0 5vw;
+    }
+    nav h2{
+        font-size: 6vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .nav-2 h4{
+        font-size: 4vw;
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    nav i{
+        display: block;
+        font-size: 6vw;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding: 1vw;
+    }
+    .left{
+        height: 50%;
+        width: 100%;
+        margin-bottom: 5vw;
+    }
+    .right{
+        height: 50%;
+        width: 100%;
+    }
+    .left h1{
+        font-size: 9vw;
+        margin: 2vw 1.5vw; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .left p{
+        font-size: 3vw;
+        padding: 0 2.9vw;
+        margin-top: 3vh;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .left button{
+        font-size: 4vw;
+        padding: 2vh 4vw;
+        
+    
+    }
+
+}
